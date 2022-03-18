@@ -1,4 +1,6 @@
-import { Container, MovieList, Movie } from './styles';
+import { Container } from './styles';
+import { Movie } from '../../components/Movie/style';
+import { MovieList } from '../../components/MovieList/style';
 
 function Home() {
   const movies = [
