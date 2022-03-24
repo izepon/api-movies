@@ -1,7 +1,7 @@
 ## 💡 Objetivo:
  Consumir API do Movie Database e praticar React.
  
-Deploy:
+Deploy: https://api-movies-seven.vercel.app/
 
 <p align="left">
   <img alt="site-example" src="https://user-images.githubusercontent.com/18584285/159814346-eba0fc27-278e-451f-866a-c3354b429797.png" width="50%" ">
