@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container } from './styles';
 import { Movie } from '../../components/Movie/style';
 import { MovieList } from '../../components/MovieList/style';
-import { APIKey } from '../../config/key';
+import * as key from '../../config/key';
 
 function Home() {
   const imagePath = 'https://image.tmdb.org/t/p/w500/';
@@ -12,7 +12,7 @@ function Home() {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${APIKey}&language=en-US`
+      `https://api.themoviedb.org/3/movie/popular?api_key=${key.APIKey}&language=en-US`
     )
       .then((response) => response.json())
       .then((data) => {

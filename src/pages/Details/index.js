@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { APIKey } from '../../config/key';
+import * as key from '../../config/key';
 import { Container } from '../Details/style';
 
 function Details() {
@@ -11,7 +11,7 @@ function Details() {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey}&language=pt-BR`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${key.APIKey}&language=pt-BR`
     )
       .then((response) => response.json())
       .then((data) => {
